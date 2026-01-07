@@ -13,7 +13,7 @@ A modern comment system built with React, Vite, and Tailwind CSS that allows use
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd comment
+   cd feed-frontend
    ```
 
 2. Install dependencies:
