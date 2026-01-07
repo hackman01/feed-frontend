@@ -1,16 +1,79 @@
-# React + Vite
+# Comment System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern comment system built with React, Vite, and Tailwind CSS that allows users to create posts and add nested comments.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (v16 or higher)
+- npm (v7 or higher) or yarn
+- Backend API server (make sure it's running and accessible)
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd comment
+   ```
 
-## Expanding the ESLint configuration
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Environment Variables
+
+Create a `.env` file in the project root and add the following variables:
+
+```env
+VITE_API_BASE_URL=http://localhost:5000
+```
+
+Replace `http://localhost:5000` with your backend API URL if it's different.
+
+## Available Scripts
+
+In the project directory, you can run:
+
+- `npm run dev` or `yarn dev`
+  - Runs the app in development mode.
+  - Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+  - The page will reload when you make changes.
+
+- `npm run build` or `yarn build`
+  - Builds the app for production to the `dist` folder.
+  - It correctly bundles React in production mode and optimizes the build for the best performance.
+
+- `npm run preview` or `yarn preview`
+  - Serves the production build from the `dist` folder.
+  - Useful for testing the production build locally.
+
+## Project Structure
+
+```
+src/
+├── components/       # Reusable UI components
+├── App.jsx          # Main application component
+└── main.jsx         # Application entry point
+```
+## Features
+
+- Create posts with titles and content
+- Add comments to posts
+- Nested replies to comments
+- Real-time updates
+- Responsive design
+
+## Technologies Used
+
+- React 19
+- Vite
+- Tailwind CSS
+- React Router
+- Axios for API calls
+
+## License
+
+This project is open source and available under the MIT License.
