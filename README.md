@@ -1,6 +1,6 @@
-# Comment System
+# Thread System
 
-A modern comment system built with React, Vite, and Tailwind CSS that allows users to create posts and add nested comments.
+A modern Thread system built with React, Vite, and Tailwind CSS that allows users to create posts and add nested comments.
 
 ## Prerequisites
 
